@@ -83,7 +83,7 @@ gridForm.setColumnNum(2);
 And change the Orientation of the Fields by using the method ``` setFieldOrientation() ```
 
 ```
-        gridForm.setFieldOrientation(Orientation.HORIZONTAL);
+gridForm.setFieldOrientation(Orientation.HORIZONTAL);
 ```
 ![image](https://github.com/YoriChan/FormFX/blob/master/img/GridFormDemo_H.png)
 
