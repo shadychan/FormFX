@@ -23,7 +23,7 @@ In the past, I used a lot of Labels, Controls, HBox, GridPane, etc. to create a 
 
 - #### Use FieldGroup To Create A GridForm
 
-``` #id ``` is the id of the Field. The class ``` Input ``` help you instantiate Fields of different type quickly. To put some Fileds into a FieldGroup, you can use the method ``` join() ``` . With a FieldGroup, you can generate a GridForm or a CasualForm.
+``` #id ``` is the id of the Field. The class ``` Input ``` help you instantiate Controls quickly. It provides parameters like preSize, promptText, defaultValue etc. for you to customize your controls. To put some Fileds into a FieldGroup, you can use the method ``` join() ``` . With a FieldGroup, you can generate a GridForm or a CasualForm.
 
 ```
 public class GridFormDemo extends Application {
@@ -125,10 +125,10 @@ public class CasualFormDemo extends Application {
         }};
 
         // Create a CasualForm
-        CasualForm gridForm = new CasualForm(fieldGroup);
-        gridForm.setAlignment(Pos.CENTER);
+        CasualForm casualForm = new CasualForm(fieldGroup);
+        casualForm.setAlignment(Pos.CENTER);
 
-        Scene scene = new Scene(gridForm);
+        Scene scene = new Scene(casualForm);
         stage.setTitle("CasualForm Demo");
         stage.setScene(scene);
         stage.show();
@@ -181,3 +181,7 @@ User user = new User();
 gridForm.fill(user);
 
 ```
+
+### Demos
+
+see ``` FormFX/test/demo/ ```
